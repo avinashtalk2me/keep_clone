@@ -1,0 +1,53 @@
+.noteListContainer {
+  width: 100%;
+  list-style: none;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.noteItemContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 15px;
+  background: inherit;
+}
+
+.noteItemContainer span {
+  width: 95%;
+  display: flex;
+  align-items: center;
+}
+
+.noteItemContainer input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.checkListItemInput {
+  background: transparent;
+  flex-grow: 1;
+  border: none;
+  color: #666;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 8px 0px;
+  width: 100%;
+}
+
+.noteItemContainer button {
+  color: #666;
+  border: none;
+  margin-right: 15px;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  font-size: 22px;
+  opacity: 0;
+}
+
+.noteListContainer li:hover > button {
+  opacity: 1;
+}

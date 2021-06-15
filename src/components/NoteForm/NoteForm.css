@@ -1,0 +1,51 @@
+.formContainer {
+  margin: 0 auto;
+  max-width: 600px;
+  min-height: 60px;
+  transition: background 0.2s;
+  border-radius: 5px;
+  box-shadow: 1px 1px 8px 1px rgba(182, 178, 178, 0.53);
+  padding: 20px 0px 15px 0px;
+}
+
+.formGroup {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formInput {
+  background: transparent;
+  border: none;
+  color: #666;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 20px 18px 15px;
+  width: 100%;
+}
+
+.formTextArea {
+  background: transparent;
+  border: none;
+  color: #666;
+  outline: none;
+  letter-spacing: 0.7px;
+  font-size: 15px;
+  width: 100%;
+  margin: 0 20px 0 20px;
+  height: auto;
+  resize: none;
+  overflow: hidden;
+  min-height: 10px;
+}
+
+@media (max-width: 650px) {
+  .formContainer {
+    margin: 0 25px;
+  }
+}
+@media (max-width: 600px) {
+  .formContainer {
+    margin: 0 10px;
+  }
+}

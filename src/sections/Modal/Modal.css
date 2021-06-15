@@ -1,0 +1,18 @@
+.modal-main {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(155, 155, 155, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity:1
+}
+
+.modal {
+  transition: all 0.1s;
+  width: 50%;
+}

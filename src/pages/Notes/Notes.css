@@ -1,0 +1,12 @@
+.notecontainer {
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 50px;
+  min-height: 84vh;
+}
+
+@media (max-width: 959px) {
+  .notecontainer {
+    min-height: calc(100vh - 100px);
+  }
+}

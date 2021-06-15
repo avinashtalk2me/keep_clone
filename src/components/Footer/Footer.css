@@ -1,0 +1,16 @@
+footer {
+    height: 8vh;
+    text-align: center;
+    background: #616775;
+    line-height: 70px;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 0.4px;
+}
+
+@media (max-width: 959px) {
+  footer {
+    height: 50px;
+    line-height: 50px;
+  }
+}

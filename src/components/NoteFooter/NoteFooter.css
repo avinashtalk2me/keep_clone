@@ -1,0 +1,11 @@
+.noteFooter {
+  margin-top: 10px;
+  padding: 15px 15px 5px;
+  border-top: 1px solid #efefef;
+  display: flex;
+  justify-content: space-between;
+}
+
+.spanFooter {
+  font-size: 14px;
+}

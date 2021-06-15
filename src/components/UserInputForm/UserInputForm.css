@@ -1,0 +1,120 @@
+.userContainer {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: auto 50%;
+}
+
+.card {
+  width: 400px;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+}
+
+h3 {
+  letter-spacing: 0.3px;
+  text-align: center;
+  margin: 3px 0 8px 0;
+  color: #555;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formElem {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8px;
+}
+
+label {
+  letter-spacing: 0.3px;
+  margin-top: 5px;
+  color: #555;
+}
+
+.loginFormInput {
+  margin: 4px 5px 8px 10px;
+  outline: none;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  padding-left: 5px;
+  width: 210px;
+  height: 30px;
+}
+
+.colorPicker {
+  margin: 4px 5px 8px 5px;
+  outline: none;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  width: 80px;
+  height: 40px;
+}
+
+.setColor {
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  width: 68px;
+  height: 28px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.error {
+  position: absolute;
+  padding-left: 18px;
+  color: red;
+  font-size: 10px;
+  margin-top: 35px;
+}
+
+.submitButton {
+  align-self: center;
+  letter-spacing: 0.3px;
+  margin: 5px;
+  outline: none;
+  width: 200px;
+  height: 35px;
+  border: none;
+  background: #4d5db8;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+@media (max-width: 500px) {
+  .userContainer {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .card {
+    margin: 5px 0;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .loginFormInput {
+    width: 60vw;
+    margin: 5px 0 0 10px;
+  }
+  
+  .submitButton {
+    width: 90vw;
+    margin: 5px 0;
+  }
+}

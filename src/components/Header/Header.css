@@ -1,0 +1,16 @@
+nav {
+    height: 8vh;
+    background-color: #616775;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 0 30px;
+    align-items: center;
+    font-size: 30px;
+}
+
+@media (max-width: 959px) {
+    nav{
+      height: 50px;
+    }    
+  }

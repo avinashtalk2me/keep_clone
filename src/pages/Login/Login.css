@@ -1,0 +1,14 @@
+.main-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 84vh;
+  box-sizing: border-box;
+
+
+}
+@media (max-width: 959px) {
+  .main-home{
+    min-height: calc(100vh - 100px);
+  }  
+}
