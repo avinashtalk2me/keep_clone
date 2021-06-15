@@ -2,15 +2,12 @@ import React from "react";
 import {
   Route,
   BrowserRouter as Router,
-  Switch,
-  Redirect,
+  Switch
 } from "react-router-dom";
-import { connect } from "react-redux";
 import { Header, Footer } from "./components";
 import { Login, Notes } from "./pages";
 
-const App = ({ isUserAuthenticated }) => {
-  console.log(isUserAuthenticated);
+const App = () => {
   return (
     <Router>
       <div className="appContainer">
@@ -25,9 +22,4 @@ const App = ({ isUserAuthenticated }) => {
   );
 };
 
-const mapStateToProps = (state) => {
-  return {
-    isUserAuthenticated: state.notes.isUserAuthenticated,
-  };
-};
-export default connect(mapStateToProps)(App);
+export default App;
