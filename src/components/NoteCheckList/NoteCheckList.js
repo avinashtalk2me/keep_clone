@@ -29,15 +29,24 @@ const NoteCheckList = (props) => {
 
   const handleKeyUp = (e) => {
     if (e.key === "Enter") {
-      const uid = uuid();
-      const newCheckList = {
-        ...checkListItems,
-        [uid]: {
-          listItem: "",
-          uid,
-        },
+      let emptyCheckList = 0;
+      const checkEmptyCheckList = () => {
+        emptyCheckList = Object.values(checkListItems).filter(
+          (item) => !item.listItem
+        ).length;
       };
-      setCheckListItems(newCheckList);
+      checkEmptyCheckList();
+      if (emptyCheckList === 0) {
+        const uid = uuid();
+        const newCheckList = {
+          ...checkListItems,
+          [uid]: {
+            listItem: "",
+            uid,
+          },
+        };
+        setCheckListItems(newCheckList);
+      }
     }
   };
 
